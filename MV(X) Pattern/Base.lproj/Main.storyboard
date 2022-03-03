@@ -8,16 +8,44 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Greeting View-->
+        <!--Greeting View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GreetingView" customModule="MV_X__Pattern" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GreetingViewController" customModule="MV_X__Pattern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6i-ut-Y25">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.69999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="grv-LC-pSP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to screen for greeting" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ow8-Mz-Xb8">
+                                <rect key="frame" x="45" y="430" width="324.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g6i-ut-Y25" secondAttribute="trailing" id="9uP-ds-5td"/>
+                            <constraint firstItem="Ow8-Mz-Xb8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IyP-E0-AHo"/>
+                            <constraint firstItem="g6i-ut-Y25" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gDW-9x-tJp"/>
+                            <constraint firstItem="g6i-ut-Y25" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="k4t-0I-H4h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g6i-ut-Y25" secondAttribute="bottom" id="p7K-fz-1IE"/>
+                            <constraint firstItem="Ow8-Mz-Xb8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zAo-Xh-sRa"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textLabel" destination="Ow8-Mz-Xb8" id="YBD-AB-IWk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

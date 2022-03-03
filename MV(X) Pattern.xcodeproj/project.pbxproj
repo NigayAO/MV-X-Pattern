@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D11D16527D12B4400822249 /* GreetingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D11D16427D12B4400822249 /* GreetingViewModel.swift */; };
+		1D33191427CFD62C0010B1CC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D33191327CFD62C0010B1CC /* Person.swift */; };
 		1D6DEDA727CE6AFB0083CFE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6DEDA627CE6AFB0083CFE3 /* AppDelegate.swift */; };
 		1D6DEDA927CE6AFB0083CFE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6DEDA827CE6AFB0083CFE3 /* SceneDelegate.swift */; };
-		1D6DEDAB27CE6AFB0083CFE3 /* GreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6DEDAA27CE6AFB0083CFE3 /* GreetingView.swift */; };
+		1D6DEDAB27CE6AFB0083CFE3 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6DEDAA27CE6AFB0083CFE3 /* GreetingViewController.swift */; };
 		1D6DEDAE27CE6AFB0083CFE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6DEDAC27CE6AFB0083CFE3 /* Main.storyboard */; };
 		1D6DEDB027CE6AFC0083CFE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D6DEDAF27CE6AFC0083CFE3 /* Assets.xcassets */; };
 		1D6DEDB327CE6AFC0083CFE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6DEDB127CE6AFC0083CFE3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D11D16427D12B4400822249 /* GreetingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewModel.swift; sourceTree = "<group>"; };
+		1D33191327CFD62C0010B1CC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		1D6DEDA327CE6AFB0083CFE3 /* MV(X) Pattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MV(X) Pattern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D6DEDA627CE6AFB0083CFE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D6DEDA827CE6AFB0083CFE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D6DEDAA27CE6AFB0083CFE3 /* GreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingView.swift; sourceTree = "<group>"; };
+		1D6DEDAA27CE6AFB0083CFE3 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		1D6DEDAD27CE6AFB0083CFE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D6DEDAF27CE6AFC0083CFE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D6DEDB227CE6AFC0083CFE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,10 +62,12 @@
 			children = (
 				1D6DEDA627CE6AFB0083CFE3 /* AppDelegate.swift */,
 				1D6DEDA827CE6AFB0083CFE3 /* SceneDelegate.swift */,
-				1D6DEDAA27CE6AFB0083CFE3 /* GreetingView.swift */,
+				1D33191327CFD62C0010B1CC /* Person.swift */,
+				1D6DEDAA27CE6AFB0083CFE3 /* GreetingViewController.swift */,
+				1D11D16427D12B4400822249 /* GreetingViewModel.swift */,
 				1D6DEDAC27CE6AFB0083CFE3 /* Main.storyboard */,
-				1D6DEDAF27CE6AFC0083CFE3 /* Assets.xcassets */,
 				1D6DEDB127CE6AFC0083CFE3 /* LaunchScreen.storyboard */,
+				1D6DEDAF27CE6AFC0083CFE3 /* Assets.xcassets */,
 				1D6DEDB427CE6AFC0083CFE3 /* Info.plist */,
 			);
 			path = "MV(X) Pattern";
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D6DEDAB27CE6AFB0083CFE3 /* GreetingView.swift in Sources */,
+				1D6DEDAB27CE6AFB0083CFE3 /* GreetingViewController.swift in Sources */,
 				1D6DEDA727CE6AFB0083CFE3 /* AppDelegate.swift in Sources */,
+				1D11D16527D12B4400822249 /* GreetingViewModel.swift in Sources */,
+				1D33191427CFD62C0010B1CC /* Person.swift in Sources */,
 				1D6DEDA927CE6AFB0083CFE3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
